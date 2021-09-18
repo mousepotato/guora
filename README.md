@@ -46,6 +46,7 @@ db:
   addr: ./guora.db
   # driver: mysql
   # addr: user:password@/dbname?charset=utf8&parseTime=True&loc=Local
+  # addr: user:password@tcp(xxxx.rds.amazonaws.com:3306)/guora?charset=utf8&parseTime=True
   # driver: postgres
   # addr: host=myhost user=gorm dbname=gorm sslmode=disable password=mypassword
 redis:
@@ -73,8 +74,13 @@ address: :8080
 
 ### 4.Init and Run
 
+- 第一次启动
 ```shell
 $ (sudo) go run ./cmd/guora -init
+```
+- 之后启动
+```shell
+$ (sudo) go run ./cmd/guora 
 ```
 
 ### 5. Visit Website
