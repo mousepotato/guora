@@ -22,12 +22,20 @@ $ docker-compose up --build
 ### 1.Clone Source Code
 
 ```shell
-$ git clone https://github.com/meloalright/guora
+$ git clone https://github.com/mousepotaot/guora
 
 $ cd guora
 ```
 
 ### 2.Download Requirements
+
+- install go
+
+```
+sudo apt install snapd
+sudo snap install go --classic
+sudo apt install build-essential
+```
 
 ```shell
 $ go mod download
