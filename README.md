@@ -22,7 +22,7 @@ $ docker-compose up --build
 ### 1.Clone Source Code
 
 ```shell
-$ git clone https://github.com/mousepotaot/guora
+$ git clone https://github.com/mousepotato/guora.git
 
 $ cd guora
 ```
