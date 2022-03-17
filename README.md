@@ -88,7 +88,7 @@ $ (sudo) go run ./cmd/guora -init
 ```
 - 之后启动
 ```shell
-$ (sudo) go run ./cmd/guora 
+$ (sudo) go run ./cmd/guora &
 ```
 
 ### 5. Visit Website
