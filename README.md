@@ -44,7 +44,8 @@ $ go mod download
 ### 3.Create Configuration
 
 ```shell
-$ touch /etc/guora/configuration.yaml
+$ sudo mkdir -p /etc/guora/
+$ sudo cp configuration.example.yaml /etc/guora/configuration.yaml
 ```
 
 ```yaml
@@ -82,7 +83,7 @@ address: :8080
 
 ### 4.Init and Run
 
-- 第一次启动
+- 第一次启动 create DB: `guora` then 
 ```shell
 $ (sudo) go run ./cmd/guora -init
 ```
