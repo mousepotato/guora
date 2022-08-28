@@ -1,5 +1,5 @@
-FROM golang:1.13-alpine AS builder
-WORKDIR /go/src/github.com/meloalright/guora
+FROM golang:1.18-alpine AS builder
+WORKDIR /Users/sli/playpen/guora
 ENV CC=gcc
 COPY . .
 RUN apk add --no-cache gcc musl-dev \
@@ -7,7 +7,7 @@ RUN apk add --no-cache gcc musl-dev \
 ###############
 FROM alpine:3.6
 COPY --from=builder /go/bin/guora /usr/local/bin
-COPY --from=builder /go/src/github.com/meloalright/guora /guora
+COPY --from=builder /Users/sli/playpen/guora /guora
 COPY configuration.example.yaml /etc/guora/configuration.yaml
 WORKDIR /guora
 CMD "guora" "-init"

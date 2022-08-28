@@ -39,6 +39,7 @@ sudo apt install build-essential
 
 ```shell
 $ go mod download
+$ go mod tidy
 ```
 
 ### 3.Create Configuration
