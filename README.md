@@ -38,7 +38,6 @@ sudo apt install build-essential
 ```
 
 ```shell
-$ go mod download
 $ go mod tidy
 ```
 
